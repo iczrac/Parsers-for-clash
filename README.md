@@ -9,6 +9,7 @@
 
 # 用法
 直接复制parsers.yml的内容到clash的“setting--profiles--parsers”中，执行“profiles”的连接更新即可
+ps：我用的是Clash for Windows
 
 # 特别鸣谢
 来自网络的各方力量
