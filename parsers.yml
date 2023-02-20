@@ -170,12 +170,12 @@ parsers: # array
         - proxy-groups.(URL-TEST).proxies=[]proxyNames
         - proxy-groups.(LOAD-BALANCE).proxies=[]proxyNames
         - proxy-groups.(YouTube-Url-Test).proxies=[]proxyNames
-        - proxy-groups.香港.proxies=[]proxyNames|香港|HK|Hong Kong # 向指定策略组添加订阅中的节点名，可使用正则过滤
-        - proxy-groups.台湾.proxies=[]proxyNames|台|新北|彰化|TW|Taiwan
-        - proxy-groups.日本.proxies=[]proxyNames|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan
-        - proxy-groups.韩国.proxies=[]proxyNames|韩国|KR|Korea|KOR|首尔|韩|韓
+        - proxy-groups.香港.proxies=[]proxyNames|港|香港|HK|Hong Kong # 向指定策略组添加订阅中的节点名，可使用正则过滤
+        - proxy-groups.台湾.proxies=[]proxyNames|台|台湾|新北|彰化|TW|Taiwan
+        - proxy-groups.日本.proxies=[]proxyNames|日|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan
+        - proxy-groups.韩国.proxies=[]proxyNames|韩|韓|韩国|KR|Korea|KOR|首尔
         - proxy-groups.新加坡.proxies=[]proxyNames|新加坡|坡|狮城|SG|Singapore
-        - proxy-groups.美国.proxies=[]proxyNames|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
+        - proxy-groups.美国.proxies=[]proxyNames|美|韓美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
         - proxy-groups.其他.proxies=[]proxyNames|^[^香日台新韩美]*$ # 这个可以自定义，这个正则的意思是排除节点名字有“香日台新韩美”的节点。
         - mixed-port=7890
 
