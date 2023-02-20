@@ -5,9 +5,10 @@
 # 主要功能特色
 - 自带测速选择
 - 按国别测速分组
-- 可独立选择openai、netflix、YouTube的网络，自然是优先选美国
+- 可独立选择openai、netflix、YouTube的网络
 
+# 用法
+直接复制parsers.yml的内容到clash的“setting--profiles--parsers”中，执行“profiles”的连接更新即可
 
-
-# 鸣谢
+# 特别鸣谢
 来自网络的各方力量
