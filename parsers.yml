@@ -180,13 +180,13 @@ parsers: # array
         - mixed-port=7890
 
        # 为各个策略组添加一个DIRECT，避免机场节点无法匹配上面的正则筛选而导致配置出错。应该有其他办法避免，但是我不会。
-        - proxy-groups.🇭🇰香港.proxies.0+DIRECT
-        - proxy-groups.🐳台湾.proxies.0+DIRECT
-        - proxy-groups.🇯🇵日本.proxies.0+DIRECT
-        - proxy-groups.🇰🇷韩国.proxies.0+DIRECT
-        - proxy-groups.🇸🇬新加坡.proxies.0+DIRECT
-        - proxy-groups.🇺🇸美国.proxies.0+DIRECT
-        - proxy-groups.👨‍🎤其他.proxies.0+DIRECT
+        - proxy-groups.🇭🇰香港.proxies.0+REJECT
+        - proxy-groups.🐳台湾.proxies.0+REJECT
+        - proxy-groups.🇯🇵日本.proxies.0+REJECT
+        - proxy-groups.🇰🇷韩国.proxies.0+REJECT
+        - proxy-groups.🇸🇬新加坡.proxies.0+REJECT
+        - proxy-groups.🇺🇸美国.proxies.0+REJECT
+        - proxy-groups.👨‍🎤其他.proxies.0+REJECT
 
         # - proxy-groups.节点名字.proxies.0+DIRECT # 向指定分组第一个位置添加一个 DIRECT 节点名
         # 一些可能用到的正则过滤节点示例，使分组更细致
