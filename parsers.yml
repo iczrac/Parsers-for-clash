@@ -199,6 +199,7 @@ parsers: # array
         
   # 添加规则
       prepend-rules: # 规则由上往下遍历，如上面规则已经命中，则不再往下处理
+        - DOMAIN-SUFFIX,omnivore.app,🥷PROXY
         - DOMAIN-SUFFIX,openai.com,🤖OpenAI
         - DOMAIN-SUFFIX,ai.com,🤖OpenAI
         - DOMAIN,youtube.com,🎎YouTube
