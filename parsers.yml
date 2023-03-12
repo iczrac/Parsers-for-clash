@@ -19,6 +19,7 @@ parsers: # array
         proxies:
          - 🚀URL-TEST
          - 🎛LOAD-BALANCE
+         - 🕹Fallback
          - 👆SELECT
          - DIRECT
          - 🇭🇰香港
@@ -34,6 +35,7 @@ parsers: # array
         proxies:
          - 🚀URL-TEST
          - 🎛LOAD-BALANCE
+         - 🕹Fallback
          - ⏳YouTube-Url-Test
          - DIRECT
          - 🇭🇰香港
@@ -56,11 +58,20 @@ parsers: # array
         url: http://www.gstatic.com/generate_204
         interval: 600
 
+      - name: 🕹Fallback
+        type: fallback
+        url: http://www.gstatic.com/generate_204
+        interval: 60
+        lazy: true
+        tolerance: 30
+        
+
       - name: 🎎YouTube 
         type: select
         proxies:
          - 🚀URL-TEST
          - 🎛LOAD-BALANCE
+         - 🕹Fallback
          - ⏳YouTube-Url-Test
          - 👆SELECT
          - DIRECT
@@ -87,6 +98,7 @@ parsers: # array
         proxies:
          - 🚀URL-TEST
          - 🎛LOAD-BALANCE
+         - 🕹Fallback
          - 👆SELECT
          - DIRECT
          - 🇭🇰香港
@@ -102,6 +114,7 @@ parsers: # array
         proxies:
          - 🚀URL-TEST
          - 🎛LOAD-BALANCE
+         - 🕹Fallback
          - 👆SELECT
          - DIRECT
          - 🇭🇰香港
@@ -169,6 +182,7 @@ parsers: # array
       commands:
         - proxy-groups.(🚀URL-TEST).proxies=[]proxyNames
         - proxy-groups.(🎛LOAD-BALANCE).proxies=[]proxyNames
+        - proxy-groups.(🕹Fallback).proxies=[]proxyNames
         - proxy-groups.(⏳YouTube-Url-Test).proxies=[]proxyNames
         - proxy-groups.🇭🇰香港.proxies=[]proxyNames|港|香港|🇭🇰|HK|Hong Kong # 向指定策略组添加订阅中的节点名，可使用正则过滤
         - proxy-groups.🐳台湾.proxies=[]proxyNames|台|台湾|新北|彰化|TW|Taiwan
@@ -199,6 +213,7 @@ parsers: # array
         
   # 添加规则
       prepend-rules: # 规则由上往下遍历，如上面规则已经命中，则不再往下处理
+        - DOMAIN-SUFFIX,jdev.tw,🥷PROXY
         - DOMAIN-SUFFIX,omnivore.app,🥷PROXY
         - DOMAIN-SUFFIX,openai.com,🤖OpenAI
         - DOMAIN-SUFFIX,ai.com,🤖OpenAI
