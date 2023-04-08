@@ -1,0 +1,8 @@
+
+        bing: # Bing的分流规则
+          type: http
+          behavior: domain
+          url: "https://raw.githubusercontent.com/iczrac/Parsers-for-clash/main/rule/Bing.txt"
+          path: ./ruleset/bing.yaml
+          interval: 86400
+          

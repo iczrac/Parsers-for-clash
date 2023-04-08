@@ -239,7 +239,7 @@ parsers: # array
         - DOMAIN,challenges.cloudflare.com,🤖OpenAI
         - DOMAIN,youtube.com,🎎YouTube
         - RULE-SET,netflix,📽Netflix
-        - RULE-SET,bing,🔍Bing
+        - DOMAIN,bing,🔍Bing
         - RULE-SET,applications,DIRECT
         - DOMAIN,clash.razord.top,DIRECT
         - DOMAIN,yacd.haishan.me,DIRECT
@@ -258,7 +258,7 @@ parsers: # array
         - GEOIP,CN,DIRECT
         - RULE-SET,direct,DIRECT
         - RULE-SET,proxy,🥷PROXY
-        - MATCH,👆SELECT # ⭐️⭐️规则之外的，在这里来修改是白名单模式还是黑名单模式，具体在“👆SELECT”选择代理或直连，。
+        - MATCH,👆SELECT # ⭐️⭐️规则之外的，在这里来修改是白名单模式还是黑名单模式，具体在“👆SELECT”选择代理或直连。
 
       # 添加规则集
         # DOMAIN-SUFFIX：域名后缀匹配
@@ -379,11 +379,3 @@ parsers: # array
           url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Netflix/Netflix.yaml"
           path: ./ruleset/netflix.yaml
           interval: 86400
-
-        bing: # Bing的分流规则
-          type: http
-          behavior: domain
-          url: "https://raw.githubusercontent.com/iczrac/Parsers-for-clash/main/rule/Bing.txt"
-          path: ./ruleset/bing.yaml
-          interval: 86400
-          
