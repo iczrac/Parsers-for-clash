@@ -66,7 +66,7 @@ parsers: # array
         tolerance: 30
         
 
-      - name: 🎎YouTube 
+      - name: 🎎YouTube
         type: select
         proxies:
          - 🚀URL-TEST
@@ -109,7 +109,23 @@ parsers: # array
          - 🇺🇸美国
          - 👨‍🎤其他
 
-      - name: 🤖OpenAI 
+      - name: 🤖OpenAI
+        type: select
+        proxies:
+         - 🚀URL-TEST
+         - 🎛LOAD-BALANCE
+         - 🕹Fallback
+         - 👆SELECT
+         - DIRECT
+         - 🇭🇰香港
+         - 🐳台湾
+         - 🇯🇵日本
+         - 🇸🇬新加坡
+         - 🇰🇷韩国
+         - 🇺🇸美国
+         - 👨‍🎤其他
+
+      - name: 🔍Bing
         type: select
         proxies:
          - 🚀URL-TEST
@@ -132,12 +148,12 @@ parsers: # array
             - DIRECT
             - 🥷PROXY
                
-      - name: 🇭🇰香港 
+      - name: 🇭🇰香港
         type: url-test
         url: http://www.google.com/generate_204
         interval: 300
       
-      - name: 🐳台湾 
+      - name: 🐳台湾
         type: url-test
         url: http://www.google.com/generate_204
         interval: 300
@@ -147,22 +163,22 @@ parsers: # array
         url: http://www.google.com/generate_204
         interval: 300
       
-      - name: 🇸🇬新加坡 
+      - name: 🇸🇬新加坡
         type: url-test
         url: http://www.google.com/generate_204
         interval: 300
       
-      - name: 🇰🇷韩国 
+      - name: 🇰🇷韩国
         type: url-test
         url: http://www.google.com/generate_204
         interval: 300
 
-      - name: 🇺🇸美国 
+      - name: 🇺🇸美国
         type: url-test
         url: http://www.google.com/generate_204
         interval: 300
       
-      - name: 👨‍🎤其他 
+      - name: 👨‍🎤其他
         type: url-test
         url: http://www.google.com/generate_204
         interval: 300
@@ -217,8 +233,13 @@ parsers: # array
         - DOMAIN-SUFFIX,omnivore.app,🥷PROXY
         - DOMAIN-SUFFIX,openai.com,🤖OpenAI
         - DOMAIN-SUFFIX,ai.com,🤖OpenAI
+        - DOMAIN,cdn.auth0.com,🤖OpenAI
+        - DOMAIN,openaiapi-site.azureedge.net,🤖OpenAI
+        - DOMAIN-SUFFIX,identrust.com,🤖OpenAI
+        - DOMAIN,challenges.cloudflare.com,🤖OpenAI
         - DOMAIN,youtube.com,🎎YouTube
         - RULE-SET,netflix,📽Netflix
+        - RULE-SET,bing,🔍Bing
         - RULE-SET,applications,DIRECT
         - DOMAIN,clash.razord.top,DIRECT
         - DOMAIN,yacd.haishan.me,DIRECT
@@ -237,7 +258,7 @@ parsers: # array
         - GEOIP,CN,DIRECT
         - RULE-SET,direct,DIRECT
         - RULE-SET,proxy,🥷PROXY
-        - MATCH,👆SELECT # 规则之外的，在这里来修改是白名单模式还是黑名单模式，具体在“👆SELECT”选择代理或直连，。
+        - MATCH,👆SELECT # ⭐️⭐️规则之外的，在这里来修改是白名单模式还是黑名单模式，具体在“👆SELECT”选择代理或直连，。
 
       # 添加规则集
         # DOMAIN-SUFFIX：域名后缀匹配
@@ -358,3 +379,11 @@ parsers: # array
           url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Netflix/Netflix.yaml"
           path: ./ruleset/netflix.yaml
           interval: 86400
+
+        bing: # Bing的分流规则
+          type: http
+          behavior: classical
+          url: "https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/Bing/Bing.list"
+          path: ./ruleset/netflix.yaml
+          interval: 86400
+          
