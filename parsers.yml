@@ -382,8 +382,8 @@ parsers: # array
 
         bing: # Bing的分流规则
           type: http
-          behavior: classical
-          url: "https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/Bing/Bing.list"
-          path: ./ruleset/netflix.yaml
+          behavior: domain
+          url: "https://raw.githubusercontent.com/iczrac/Parsers-for-clash/main/rule/Bing.txt"
+          path: ./ruleset/bing.yaml
           interval: 86400
           
