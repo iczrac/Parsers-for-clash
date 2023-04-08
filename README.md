@@ -31,7 +31,7 @@ ps：我用的是Clash for Windows
 来自网络的各方力量
 （按照内容更新，陆续更新技术贡献的各方名录）
 
-[blackmatrix7/ios_rule_script: 分流规则、重写写规则及脚本。](https://github.com/blackmatrix7/ios_rule_script)
+@blackmatrix7[blackmatrix7/ios_rule_script: 分流规则、重写写规则及脚本。](https://github.com/blackmatrix7/ios_rule_script)
 
 # 推介
 如果你的机场不稳定，可以尝试我踩了几个坑后改用的这个
@@ -39,3 +39,5 @@ ps：我用的是Clash for Windows
 
 ps：不要用某莓的机场
 
+# 特别声明
+只支持用于网络技术学习研究，一切涉及违法违纪的与本人无关
