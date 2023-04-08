@@ -20,7 +20,8 @@
     - Bilibili国际版（2023-04-08添加）
 - 广告屏蔽
 
-[界面效果图](界面效果图.png)
+# 界面效果
+![界面效果图](界面效果图.png)
 
 # 用法
 直接复制parsers.yml的内容到clash的“setting--profiles--parsers”中，执行“profiles”的连接更新即可
