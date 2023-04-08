@@ -3,9 +3,24 @@
  一直没找到一个满足自己需求的预处理配置，陆陆续续按照网络上的各种版本修改-测试，也慢慢理解了编写的语言规则，渐渐形成这个好用的版本，和大家共享❤️️，有建议的欢迎留言😄
  
 # 主要功能特色
-- 自带测速选择
-- 按国别测速分组
-- 可独立选择openai、netflix、YouTube的网络
+- 自带测速选择（机场各节点、YouTube可单独测速优选）
+- 按国别测速分组(按国别分组)
+    - 美国
+    - 日本
+    - 台湾
+    - 新加坡
+    - 韩国
+    - 香港
+    - 其它
+- 可独立选择机场
+    - Openai
+    - Bing（2023-04-08添加，可用new bing）
+    - Netflix
+    - YouTube
+    - Bilibili国际版（2023-04-08添加）
+- 广告屏蔽
+
+[界面效果图](界面效果图.png)
 
 # 用法
 直接复制parsers.yml的内容到clash的“setting--profiles--parsers”中，执行“profiles”的连接更新即可
@@ -13,3 +28,10 @@ ps：我用的是Clash for Windows
 
 # 特别鸣谢
 来自网络的各方力量
+（按照内容更新，陆续更新技术贡献的各方名录）
+
+[blackmatrix7/ios_rule_script: 分流规则、重写写规则及脚本。](https://github.com/blackmatrix7/ios_rule_script)
+
+# 
+如果你的机场不稳定，可以尝试我踩了几个坑后，改用的这个
+[专线版](https://98ka.men/#/register?code=48erzZ7G)
