@@ -15,6 +15,7 @@
 - 可独立选择机场
     - Openai
     - Bing（2023-04-08添加，可用new bing）
+    - Google（2023-05-06添加，强化谷歌线路的一致化）
     - Netflix
     - YouTube
     - Bilibili国际版（2023-04-08添加）

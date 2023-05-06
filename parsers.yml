@@ -141,6 +141,22 @@ parsers: # array
          - 🇺🇸美国
          - 👨‍🎤其他
 
+      - name: 🚅Google
+        type: select
+        proxies:
+         - 🚀URL-TEST
+         - 🎛LOAD-BALANCE
+         - 🕹Fallback
+         - 👆SELECT
+         - DIRECT
+         - 🇭🇰香港
+         - 🐳台湾
+         - 🇯🇵日本
+         - 🇸🇬新加坡
+         - 🇰🇷韩国
+         - 🇺🇸美国
+         - 👨‍🎤其他
+
       - name: 🛀Bilibiliintl
         type: select
         proxies:
@@ -259,7 +275,9 @@ parsers: # array
         - RULE-SET,reject,🚦AD
         - RULE-SET,icloud,DIRECT #
         - RULE-SET,apple,DIRECT # 这三个为国内可直连地址，如果希望走代理改为🥷PROXY
-        - RULE-SET,google,🥷PROXY # 
+        - RULE-SET,google,🚅Google # 
+        - RULE-SET,googledrive,🚅Google # 
+        - RULE-SET,googlesearch,🚅Google # 
         - RULE-SET,tld-not-cn,🥷PROXY
         - RULE-SET,gfw,🥷PROXY
         - RULE-SET,greatfire,🥷PROXY
@@ -310,11 +328,25 @@ parsers: # array
           
         google: # Google 在中国大陆可直连的域名列表
           type: http
-          behavior: domain
-          url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
+          behavior: classical
+          url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Google/Google.yaml"
           path: ./ruleset/google.yaml
           interval: 86400
           
+        googledrive: # 
+          type: http
+          behavior: classical
+          url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GoogleDrive/GoogleDrive.yaml"
+          path: ./ruleset/googledrive.yaml
+          interval: 86400
+
+        googlesearch: # 
+          type: http
+          behavior: classical
+          url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GoogleSearch/GoogleSearch.yaml"
+          path: ./ruleset/googlesearch.yaml
+          interval: 86400
+
         proxy: # 代理域名列表
           type: http
           behavior: domain
