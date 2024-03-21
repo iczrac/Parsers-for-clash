@@ -189,6 +189,22 @@ parsers: # array
          - 🇺🇸美国
          - 👨‍🎤其他
 
+      - name: 🐈GitHub
+        type: select
+        proxies:
+         - 🚀URL-TEST
+         - 🎛LOAD-BALANCE
+         - 🕹Fallback
+         - 👆SELECT
+         - DIRECT
+         - 🇭🇰香港
+         - 🐳台湾
+         - 🇯🇵日本
+         - 🇸🇬新加坡
+         - 🇰🇷韩国
+         - 🇺🇸美国
+         - 👨‍🎤其他
+
       - name: 🚦AD
         type: select
         proxies:
@@ -285,7 +301,7 @@ parsers: # array
         - RULE-SET,bing,🔍Bing
         - RULE-SET,bilibiliintl,🛀Bilibiliintl
         - RULE-SET,twitter,🦤Twitter
-        - RULE-SET,github,🥷PROXY
+        - RULE-SET,github,🐈GitHub
         - RULE-SET,applications,DIRECT
         - DOMAIN,clash.razord.top,DIRECT
         - DOMAIN,yacd.haishan.me,DIRECT
