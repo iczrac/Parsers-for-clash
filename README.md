@@ -40,7 +40,7 @@ ps：我用的是Clash for Windows
 
 # 推介
 如果你的机场不稳定，可以尝试我踩了几个坑后改用的这个
-[专线](https://cloud.sstea.men/#/register?code=48erzZ7G)
+[推荐机场](https://niercloud.com/#/register?code=IeOBEEfs)
 ps：不要用某莓的机场
 
 # 特别声明
